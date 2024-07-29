@@ -10,7 +10,7 @@ const Signup = () => {
         <CardHeader className="mt-2 text-5xl font-Reddit font-extrabold">
           WELCOME
         </CardHeader>
-        <div className="text-lg ml-7 pr-12">
+        <form className="text-lg ml-7 pr-12">
           <input
             type="text"
             id="name"
@@ -35,11 +35,14 @@ const Signup = () => {
             className="w-full my-5 border-b-2 border-black outline-none"
             placeholder="Confirm Password"
           ></input>
-        </div>
-        <Button className="w-40 bg-black rounded-full m-auto text-lg flex justify-center items-center">
-          SIGNUP
-        </Button>
-        <Link to={"/"} className="text-base text-stone-400 ml-20">
+          <Button className="w-40 bg-black rounded-full m-auto text-lg flex justify-center items-center">
+            SIGNUP
+          </Button>
+        </form>
+        <Link
+          to={"/"}
+          className="text-base text-stone-400 ml-20 float-left my-2"
+        >
           Already have an account? LogIn
         </Link>
       </Card>
